@@ -21,7 +21,7 @@ col1, col2, col3 = st.columns([3,3,3])
 with col1:
     st.image("amtega_logo.png_2089811488.png", use_column_width=True)
 
-st.markdown("<h1 style='text-align: center;'>SMETRIAo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'>SMETRIA</h1>", unsafe_allow_html=True)
 st.markdown("<h2 style='text-align: center;'>Sistema de eventos en tiempo real</h2>", unsafe_allow_html=True)
 
 st.sidebar.header("Menú de navegación")
