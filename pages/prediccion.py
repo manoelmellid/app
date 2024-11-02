@@ -3,7 +3,55 @@ import pandas as pd
 import numpy as np
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
+longitud = None
+latitud = None
+concello_id = None
+ubicacion = None
+adelante = None
+
 def mostrar_pagina():
+    with st.form(key='my_form'):
+        # Entradas del formulario
+        input_text = st.text_input("Km del Camino donde te encuentras")
+        # opcion_seleccionada = st.selectbox("Selecciona un número:", [1, 2, 3, 4, 5])
+        # if opcion_seleccionada == 1:
+            # days=1
+        
+        # Botón para enviar el formulario
+        submit_button = st.form_submit_button(label='Enviar')
+
+        # Verifica si el campo de texto no está vacío solo después de que se presiona el botón
+        if submit_button:
+            if input_text:
+                km_camino = float(input_text.replace(',', '.'))
+                n = int(km_camino)
+
+                if n < km_camino < n + 0.25:
+                    resultado = n + 0.25
+                elif n + 0.25 < km_camino < n + 0.5:
+                    resultado = n + 0.5
+                elif n + 0.5 < km_camino < n + 0.75:
+                    resultado = n + 0.75
+                elif n + 0.75 < km_camino < n + 1:
+                    resultado = n + 1
+                else:
+                    resultado = km_camino  # Si no está en ningún rango, devuelve el número original
+
+                # Actualiza las variables con los resultados de la función
+                longitud, latitud, concello_id, ubicacion = obcoor.query_csv_data(resultado)
+                adelante = 1
+                
+                # Imprimir las coordenadas
+                if longitud is not None and latitud is not None:
+                    st.write(f"Longitud: {longitud}")
+                    st.write(f"Latitud: {latitud}")
+                    st.write(f"Ahora mismo te encuentras en el concello de {concello_id}")
+                    st.write(f"Ubicación: {ubicacion}")
+                else:
+                    st.write("No se encontraron resultados para el valor de Km proporcionado.")
+            else:
+                st.warning("Por favor, introduce una distancia en kilómetros.")
+    
     st.header("Predicción meteorológica")
     if concello_id is not None:
         st.write(f"### Predicción para tu ubicación: {concello_id}")
