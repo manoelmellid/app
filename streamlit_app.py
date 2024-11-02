@@ -19,7 +19,7 @@ adelante = None
 col1, col2, col3 = st.columns([3,3,3])
 
 with col1:
-    st.image("https://github.com/manoelmellid/app/blob/main/amtega_logo.png_2089811488.png", use_column_width=True)
+    st.image("amtega_logo.png_2089811488.png", use_column_width=True)
 
 st.markdown("<h1 style='text-align: center;'>Asistente predictivo del Camino de Santiago</h1>", unsafe_allow_html=True)
 
