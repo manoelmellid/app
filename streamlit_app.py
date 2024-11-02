@@ -65,7 +65,7 @@ if pagina == "Predicción meteorológica" or pagina == "Herramienta de navegaci�
                     resultado = km_camino  # Si no está en ningún rango, devuelve el número original
 
                 # Actualiza las variables con los resultados de la función
-                longitud, latitud, concello_id, ubicacion = obcoor.obtener_coordenadas(resultado)
+                longitud, latitud, concello_id, ubicacion = obcoor.query_csv_data(resultado)
                 adelante = 1
                 
                 # Imprimir las coordenadas
