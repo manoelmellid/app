@@ -14,7 +14,7 @@ def show():
     <style>
     .stButton>button {
         color: white; /* Color del texto */
-        background-color: rgb(13, 101, 183); /* Color de fondo azul RGB */
+        background-color: #4CAF50; /* Color de fondo del botón */
         padding: 10px 20px; /* Espaciado interno */
         border: none; /* Sin borde */
         border-radius: 5px; /* Bordes redondeados */
@@ -22,7 +22,7 @@ def show():
         cursor: pointer; /* Cursor de puntero */
     }
     .stButton>button:hover {
-        background-color: rgb(10, 90, 165); /* Color de fondo más oscuro al pasar el mouse */
+        background-color: #45a049; /* Color de fondo al pasar el mouse */
     }
     </style>
     """,
