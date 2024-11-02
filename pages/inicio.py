@@ -1,4 +1,5 @@
 import streamlit as st
+from pages import prediccion, navegacion, flujos, ocupacion
 
 def show():
     st.markdown("<h3 style='text-align: center;'>Universidade de Santiago de Compostela</h3>", unsafe_allow_html=True)
