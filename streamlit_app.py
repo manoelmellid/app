@@ -101,8 +101,8 @@ elif pagina == "Predicción meteorológica":
         st.map(data)
 
     if adelante is not None:
-
-        prn.pronostico(ubicacion, 1)
+        dias = 2
+        prn.pronostico(ubicacion, dias)
 
         # Carga de los datos
         df = pd.read_csv("salida_forecast_data.csv")
