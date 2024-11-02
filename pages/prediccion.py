@@ -5,6 +5,7 @@ import numpy as np
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
 def mostrar_pagina():
+    st.header("Predicción meteorológica")
     longitud = None
     latitud = None
     concello_id = None
@@ -53,7 +54,6 @@ def mostrar_pagina():
             else:
                 st.warning("Por favor, introduce una distancia en kilómetros.")
     
-    st.header("Predicción meteorológica")
     if concello_id is not None:
         st.write(f"### Predicción para tu ubicación: {concello_id}")
 
