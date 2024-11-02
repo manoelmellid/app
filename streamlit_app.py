@@ -5,7 +5,7 @@ col1, col2, col3 = st.columns([3,3,3])
 with col1:
     st.image("amtega_logo.png_2089811488.png", use_column_width=True)
 with col3:
-    st.header("SMETR IA")
+    st.header("SMETRIA")
 
 st.sidebar.header("Menú de navegación")
 pagina = st.sidebar.radio(
