@@ -116,6 +116,8 @@ if pagina == "Predicción meteorológica":
         
         # Mostrar el mapa solo si los datos son válidos
         st.map(data)
+    else:
+        st.write(f"Resultado: {resultado}, Longitud: {longitud}, Latitud: {latitud}")
 
     if adelante is not None:
 
