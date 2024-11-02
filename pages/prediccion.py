@@ -4,7 +4,7 @@ import numpy as np
 
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
-def mostrar_pagina():
+def show():
     st.header("Predicción meteorológica")
     longitud = None
     latitud = None
