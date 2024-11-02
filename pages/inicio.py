@@ -9,18 +9,18 @@ def show():
     st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
     st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
 
-col1, col2, col3, col4 = st.columns(4)
-
-# Colocar los botones en las columnas
-with col1:
-    if st.button('Predicción meteorológica'):
-        prediccion.show()
-with col2:
-    if st.button('Herramienta de navegación (BETA)'):
-        navegacion.show()
-with col3:
-    if st.button('Modelo predictivo de flujos (BETA)'):
-        flujos.show()
-with col4:
-    if st.button('Modelo predictivo de ocupación (BETA)'):
-        ocupación.show()
+    col1, col2, col3, col4 = st.columns(4)
+    
+    # Colocar los botones en las columnas
+    with col1:
+        if st.button('Predicción meteorológica'):
+            prediccion.show()
+    with col2:
+        if st.button('Herramienta de navegación (BETA)'):
+            navegacion.show()
+    with col3:
+        if st.button('Modelo predictivo de flujos (BETA)'):
+            flujos.show()
+    with col4:
+        if st.button('Modelo predictivo de ocupación (BETA)'):
+            ocupación.show()
