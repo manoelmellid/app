@@ -9,7 +9,7 @@ def mostrar_pagina():
 
     longitud = None
     latitud = None
-    #concello_id = None
+    concello_id = None
     ubicacion = None
     adelante = None
     print("Variables initialized.")  # Debug print
