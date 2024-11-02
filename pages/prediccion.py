@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
 def mostrar_pagina():
@@ -8,7 +9,7 @@ def mostrar_pagina():
 
     longitud = None
     latitud = None
-    concello_id = None
+    #concello_id = None
     ubicacion = None
     adelante = None
     print("Variables initialized.")  # Debug print
