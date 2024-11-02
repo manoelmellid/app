@@ -26,7 +26,7 @@ st.markdown("<h2 style='text-align: center;'>Sistema de monitorizacion de evento
 
 st.sidebar.header("Menú de navegación")
 
-pagina = st.sidebar.radio("", ["Inicio", "Predicción meteorológica", "Herramienta de navegación", "Modelo predictivo de flujos", "Modelo predictivo de ocupación"])
+pagina = st.sidebar.radio("", ["Inicio", "Predicción meteorológica", "Herramienta de navegación (BETA)", "Modelo predictivo de flujos (BETA)", "Modelo predictivo de ocupación (BETA)"])
 
 if pagina == "Predicción meteorológica":
     st.header("Predicción meteorológica")
