@@ -81,8 +81,6 @@ if pagina == "Inicio":
 
 elif pagina == "Predicción meteorológica":
     st.header("Predicción meteorológica")
-    if pagina == "Predicción meteorológica":
-
     if concello_id is not None:
         st.write(f"# Predicción para tu ubicación: {concello_id}")
 
