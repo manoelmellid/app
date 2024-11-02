@@ -3,13 +3,14 @@ import pandas as pd
 import numpy as np
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
-longitud = None
-latitud = None
-concello_id = None
-ubicacion = None
-adelante = None
-
 def mostrar_pagina():
+
+    longitud = None
+    latitud = None
+    concello_id = None
+    ubicacion = None
+    adelante = None
+    
     with st.form(key='my_form'):
         # Entradas del formulario
         input_text = st.text_input("Km del Camino donde te encuentras")
