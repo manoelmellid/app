@@ -1,5 +1,5 @@
 import streamlit as st
-from pages import inicio, prediccion, herramienta_nav, modelo_flujos, modelo_ocupacion
+from pages import inicio, prediccion, navegacion, flujos, ocupacion
 
 st.sidebar.header("Menú de navegación")
 pagina = st.sidebar.radio(
