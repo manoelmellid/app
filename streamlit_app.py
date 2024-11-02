@@ -28,15 +28,6 @@ st.sidebar.header("Menú de navegación")
 
 pagina = st.sidebar.radio("", ["Inicio", "Predicción meteorológica", "Herramienta de navegación (BETA)", "Modelo predictivo de flujos (BETA)", "Modelo predictivo de ocupación (BETA)"])
 
-if pagina == "Predicción meteorológica":
-    st.header("Predicción meteorológica")
-elif pagina == "Herramienta de navegación":
-    st.header("Herramienta de navegación")
-elif pagina == "Modelo predictivo de flujos":
-    st.header("Modelo predictivo de flujos")
-elif pagina == "Modelo predictivo de ocupación":
-    st.header("Modelo predictivo de ocupación")
-
 if pagina == "Predicción meteorológica" or pagina == "Herramienta de navegación":
     with st.form(key='my_form'):
         # Entradas del formulario
@@ -88,7 +79,9 @@ if pagina == "Inicio":
     st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
     st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
 
-if pagina == "Predicción meteorológica":
+elif pagina == "Predicción meteorológica":
+    st.header("Predicción meteorológica")
+    if pagina == "Predicción meteorológica":
 
     if concello_id is not None:
         st.write(f"# Predicción para tu ubicación: {concello_id}")
@@ -126,6 +119,15 @@ if pagina == "Predicción meteorológica":
         # Gráfica de Wind Speed
         st.write("### Evolución del viento a lo largo del día")
         st.line_chart(df[['date_time', 'wind_speed']].set_index('date_time'))
+    
+elif pagina == "Herramienta de navegación":
+    st.header("Herramienta de navegación")
+    
+elif pagina == "Modelo predictivo de flujos":
+    st.header("Modelo predictivo de flujos")
+    
+elif pagina == "Modelo predictivo de ocupación":
+    st.header("Modelo predictivo de ocupación")
 
 elif pagina == "Herramienta de navegación":
     st.write("Aquí iría el modelo predictivo de flujos")
