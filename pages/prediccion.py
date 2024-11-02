@@ -5,14 +5,11 @@ import numpy as np
 from utils import obtener_coordenadas as obcoor, pronostico as prn
 
 def mostrar_pagina():
-    print("Starting mostrar_pagina function...")  # Debug print
-
     longitud = None
     latitud = None
     concello_id = None
     ubicacion = None
     adelante = None
-    print("Variables initialized.")  # Debug print
     
     with st.form(key='my_form'):
         # Entradas del formulario
