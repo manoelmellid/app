@@ -1,9 +1,5 @@
 import streamlit as st
-from pages import prediccion, navegacion, flujos, ocupacion
-
-col1, col2, col3 = st.columns([3,3,3])
-with col1:
-    st.image("amtega_logo.png_2089811488.png", use_column_width=True)
+from pages import inicio, prediccion, navegacion, flujos, ocupacion
 
 st.sidebar.header("Menú de navegación")
 pagina = st.sidebar.radio(
@@ -11,18 +7,13 @@ pagina = st.sidebar.radio(
          "Modelo predictivo de flujos (BETA)", "Modelo predictivo de ocupación (BETA)"]
 )
 
-st.markdown("<h3 style='text-align: center;'>Universidade de Santiago de Compostela</h3>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center;'>Grao en Intelixencia Artificial</h3>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center;'>Proxecto Integrador I</h4>", unsafe_allow_html=True)
-
-st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
-st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
-
-if pagina == "Predicción meteorológica":
+if pagina == "Inicio":
+    inicio.mostrar_pagina()
+elif pagina == "Predicción meteorológica":
     prediccion.mostrar_pagina()
 elif pagina == "Herramienta de navegación (BETA)":
-    navegacion.mostrar_pagina()
+    herramienta_nav.mostrar_pagina()
 elif pagina == "Modelo predictivo de flujos (BETA)":
-    flujos.mostrar_pagina()
+    modelo_flujos.mostrar_pagina()
 elif pagina == "Modelo predictivo de ocupación (BETA)":
-    ocupacion.mostrar_pagina()
+    modelo_ocupacion.mostrar_pagina()
