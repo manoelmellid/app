@@ -15,14 +15,3 @@ def query_csv_data(km_value):
 
     # Retornar las listas
     return longitud, latitud, concello_id, ubicacion
-
-km_value = 5  # Cambia este valor al valor de Km que deseas consultar
-
-# Llamar a la función y asignar los resultados a las variables
-longitud, latitud, concello_id, ubicacion = query_csv_data(km_value)
-
-# Imprimir los resultados
-print("Longitudes:", longitud)
-print("Latitudes:", latitud)
-print("Concello IDs:", concello_id)
-print("Ubicaciones:", ubicacion)
