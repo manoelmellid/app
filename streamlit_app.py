@@ -87,7 +87,6 @@ if pagina == "Inicio":
     st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
 
 elif pagina == "Predicción meteorológica":
-    st.header("Predicción meteorológica")
     if concello_id is not None:
         st.write(f"# Predicción para tu ubicación: {concello_id}")
 
