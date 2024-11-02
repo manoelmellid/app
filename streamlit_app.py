@@ -88,21 +88,6 @@ if pagina == "Inicio":
     st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
     st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
 
-    # Fecha de hoy
-    today = datetime.today().date()
-
-    # Fecha máxima permitida (hoy + 3 días)
-    max_date = today + timedelta(days=3)
-
-    # Selector de fecha
-    date = st.date_input("Selecciona una fecha (máximo 3 días a partir de hoy)", today, max_value=max_date)
-
-    # Mensaje de confirmación
-    st.write(f"Has seleccionado la fecha: {date}")
-
-
-
-
 if pagina == "Predicción meteorológica":
 
     if concello_id is not None:
@@ -142,13 +127,25 @@ if pagina == "Predicción meteorológica":
         st.write("### Evolución del viento a lo largo del día")
         st.line_chart(df[['date_time', 'wind_speed']].set_index('date_time'))
 
-elif pagina == "Modelo predictivo de flujos":
-    st.write("Aquí iría la herramienta de rutas")
-
 elif pagina == "Herramienta de navegación":
     st.write("Aquí iría el modelo predictivo de flujos")
 
 elif pagina == "Modelo predictivo de flujos":
+    st.write("Aquí iría la herramienta de rutas")
+
+    # Fecha de hoy
+    today = datetime.today().date()
+
+    # Fecha máxima permitida (hoy + 3 días)
+    max_date = today + timedelta(days=3)
+
+    # Selector de fecha
+    date = st.date_input("Selecciona una fecha (máximo 3 días a partir de hoy)", today, max_value=max_date)
+
+    # Mensaje de confirmación
+    st.write(f"Has seleccionado la fecha: {date}")
+
+elif pagina == "Modelo predictivo de ocupación":
     st.write("Aquí iría el modelo predictivo de ocupación")
 
 # -----------------------
