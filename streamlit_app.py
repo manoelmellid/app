@@ -14,12 +14,12 @@ pagina = st.sidebar.radio(
 )
 
 if pagina == "Inicio":
-    inicio.mostrar_pagina()
+    inicio.show()
 elif pagina == "Predicción meteorológica":
-    prediccion.mostrar_pagina()
+    prediccion.show()
 elif pagina == "Herramienta de navegación (BETA)":
-    navegacion.mostrar_pagina()
+    navegacion.show()
 elif pagina == "Modelo predictivo de flujos (BETA)":
-    flujos.mostrar_pagina()
+    flujos.show()
 elif pagina == "Modelo predictivo de ocupación (BETA)":
-    ocupacion.mostrar_pagina()
+    ocupacion.show()
