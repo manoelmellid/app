@@ -17,8 +17,8 @@ st.write("Se ha desarrollado esta aplicación web que...")
 if pagina == "Predicción meteorológica":
     prediccion.mostrar_pagina()
 elif pagina == "Herramienta de navegación (BETA)":
-    herramienta_nav.mostrar_pagina()
+    navegacion.mostrar_pagina()
 elif pagina == "Modelo predictivo de flujos (BETA)":
-    modelo_flujos.mostrar_pagina()
+    flujos.mostrar_pagina()
 elif pagina == "Modelo predictivo de ocupación (BETA)":
-    modelo_ocupacion.mostrar_pagina()
+    ocupacion.mostrar_pagina()
