@@ -4,7 +4,7 @@ import numpy as np
 from datetime import datetime, timedelta
 
 
-# import obtener_coordenadas as obcoor
+import obtener_coordenadas as obcoor
 import pronostico as prn
 
 # Inicializa las variables con None
