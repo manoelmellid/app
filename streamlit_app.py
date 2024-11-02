@@ -124,7 +124,7 @@ if pagina == "Predicción meteorológica":
         prn.pronostico(ubicacion, 1)
 
         # Carga de los datos
-        df = pd.read_csv("/Users/manoelmelide/Documents/Meteogalicia/salida_forecast_data.csv")
+        df = pd.read_csv("salida_forecast_data.csv")
 
         # Convertir la columna 'date_time' en un formato de fecha adecuado
         df['date_time'] = pd.to_datetime(df['date_time'])
