@@ -85,7 +85,18 @@ if pagina == "Inicio":
 
     st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
     st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
-
+    # Botones en la página de inicio
+    if st.button('Predicción meteorológica'):
+        pagina = "Predicción meteorológica"
+    elif st.button('Herramienta de navegación (BETA)'):
+        pagina = "Herramienta de navegación (BETA)"
+    elif st.button('Modelo predictivo de flujos (BETA)'):
+        pagina = "Modelo predictivo de flujos (BETA)"
+    elif st.button('Modelo predictivo de ocupación (BETA)'):
+        pagina = "Modelo predictivo de ocupación (BETA)"
+    else:
+        pagina = "Inicio"
+    
 elif pagina == "Predicción meteorológica":
     if concello_id is not None:
         st.write(f"### Predicción para tu ubicación: {concello_id}")
