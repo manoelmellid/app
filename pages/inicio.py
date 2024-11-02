@@ -14,7 +14,7 @@ def show():
     <style>
     .stButton>button {
         color: white; /* Color del texto */
-        background-color: #4CAF50; /* Color de fondo del botón */
+        background-color: #0d65b7; /* Color de fondo azul */
         padding: 10px 20px; /* Espaciado interno */
         border: none; /* Sin borde */
         border-radius: 5px; /* Bordes redondeados */
@@ -22,7 +22,9 @@ def show():
         cursor: pointer; /* Cursor de puntero */
     }
     .stButton>button:hover {
-        background-color: #45a049; /* Color de fondo al pasar el mouse */
+        background-color: white; /* Color de fondo al pasar el mouse */
+        color: #0d65b7; /* Color del texto al pasar el mouse */
+        border: 2px solid #0d65b7; /* Borde azul al pasar el mouse */
     }
     </style>
     """,
