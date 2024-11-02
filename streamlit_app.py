@@ -26,6 +26,15 @@ st.sidebar.header("Menú de navegación")
 
 pagina = st.sidebar.radio("", ["Inicio", "Predicción meteorológica", "Herramienta de navegación (BETA)", "Modelo predictivo de flujos (BETA)", "Modelo predictivo de ocupación (BETA)"])
 
+if pagina == "Predicción meteorológica":
+    st.header("Predicción meteorológica")
+elif pagina == "Herramienta de navegación (BETA)":
+    st.header("Herramienta de navegación")
+elif pagina == "Modelo predictivo de flujos (BETA)":
+    st.header("Modelo predictivo de flujos")
+elif pagina == "Modelo predictivo de ocupación (BETA)":
+    st.header("Modelo predictivo de ocupación")
+
 if pagina == "Predicción meteorológica" or pagina == "Herramienta de navegación (BETA)":
     with st.form(key='my_form'):
         # Entradas del formulario
@@ -117,14 +126,12 @@ elif pagina == "Predicción meteorológica":
         st.line_chart(df[['date_time', 'wind_speed']].set_index('date_time'))
     
 elif pagina == "Herramienta de navegación (BETA)":
-    st.header("Herramienta de navegación")
+    st.write("Aquí iría la herramienta de navegación")
     
 elif pagina == "Modelo predictivo de flujos (BETA)":
-    st.header("Modelo predictivo de flujos")
     st.write("Aquí iría el modelo predictivo de flujos")
 
 elif pagina == "Modelo predictivo de ocupacion (BETA)":
-    st.header("Modelo predictivo de ocupación")
     st.write("Aquí iría la herramienta de ocupación")
 
     # Fecha de hoy
