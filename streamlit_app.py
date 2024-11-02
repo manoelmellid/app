@@ -112,7 +112,7 @@ elif pagina == "Predicción meteorológica":
 
         # Gráfica de Temperature
         st.write("### Temperatura esperada:")
-        st.line_chart(df[['date_time', 'temperature']].set_index('date_time'))
+        st.bar_chart(df[['date_time', 'temperature']].set_index('date_time'))
 
         # Gráfica de Precipitation Amount
         st.write("### Precipitaciones esperadas:")
