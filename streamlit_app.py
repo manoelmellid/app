@@ -27,11 +27,17 @@ st.write("""
 Esta web se a desarrollado en el marco de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
 de la Universidade de Santiago de Compostela.
 """)
-st.write("""
-Manoel Mellid Losada
-\nBorja Puime Rodríguez
-\nCaarolina Rey Conesa
-\n3º Intelixencia Artificial - USC
-""")
+
+nom1, nom2, nom3 = st.columns([3,3,3])
+with nom1:
+    st.write("Manoel Mellid Losada")
+with nom2:
+    st.write("Borja Puime Rodríguez")
+with nom3:
+    st.write("Carolina Rey Conesa")
+    
+seg1, seg2, seg3 = st.columns([3,3,3])
+with seg2:
+    st.write("3º Intelixencia Artificial - USC")
 
 
