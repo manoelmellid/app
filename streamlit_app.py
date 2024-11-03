@@ -24,8 +24,14 @@ if st.button("Predicción"):
 st.divider()
 
 st.write("""
-El proyecto de desarrollo de esta apliación se encuadra dentro de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
+Esta web se a desarrollado en el marco de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
 de la Universidade de Santiago de Compostela.
+""")
+st.write("""
+Manoel Mellid Losada
+\nBorja Puime Rodríguez
+\nCaarolina Rey Conesa
+\3º Intelixencia Artificial - USC
 """)
 
 
