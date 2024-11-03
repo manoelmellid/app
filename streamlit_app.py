@@ -30,7 +30,7 @@ de la Universidade de Santiago de Compostela.
 
 nom1, nom2, nom3 = st.columns([3,3,3])
 with nom1:
-    st.write("Manoel Mellid Losada")
+    st.markdown("<p style='text-align: center;'>Manoel Mellid Losada</p>", unsafe_allow_html=True)
 with nom2:
     st.write("Borja Puime Rodríguez")
 with nom3:
