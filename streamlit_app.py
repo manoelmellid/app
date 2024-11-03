@@ -1,5 +1,5 @@
 import streamlit as st
-from pages import inicio, prediccion, navegacion, flujos, ocupacion
+from pages import prediccion, navegacion, flujos, ocupacion
 
 col1, col2, col3 = st.columns([3,3,3])
 with col1:
@@ -7,19 +7,10 @@ with col1:
 with col3:
     st.header("SMETRIA")
 
-st.sidebar.header("Menú de navegación")
-pagina = st.sidebar.radio(
-    "", ["Inicio", "Predicción meteorológica", "Herramienta de navegación (BETA)", 
-         "Modelo predictivo de flujos (BETA)", "Modelo predictivo de ocupación (BETA)"]
-)
+st.markdown("<h3 style='text-align: center;'>Universidade de Santiago de Compostela</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center;'>Grao en Intelixencia Artificial</h3>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center;'>Proxecto Integrador I</h4>", unsafe_allow_html=True)
 
-if pagina == "Inicio":
-    inicio.show()
-elif pagina == "Predicción meteorológica":
-    prediccion.show()
-elif pagina == "Herramienta de navegación (BETA)":
-    navegacion.show()
-elif pagina == "Modelo predictivo de flujos (BETA)":
-    flujos.show()
-elif pagina == "Modelo predictivo de ocupación (BETA)":
-    ocupacion.show()
+st.write("Este proyecto se encuadra dentro del caso de Uso \"Sistema de monitorización de eventos en los últimos tramos del Camino de Santiago\".")
+st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
+
