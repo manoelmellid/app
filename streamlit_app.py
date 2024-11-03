@@ -1,6 +1,10 @@
 import streamlit as st
 from pages import prediccion, navegacion, flujos, ocupacion
 
+st.set_page_config(
+    page_title="Hello",
+)
+
 col1, col2, col3 = st.columns([3,3,3])
 with col1:
     st.image("amtega_logo.png_2089811488.png", use_column_width=True)
