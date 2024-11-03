@@ -37,6 +37,7 @@ def show():
     with col1:
         if st.button('Predicción meteorológica'):
             prediccion.show()
+            st.experimental_set_query_params(page="prediccion")
     with col2:
         if st.button('Herramienta de navegación (BETA)'):
             navegacion.show()
