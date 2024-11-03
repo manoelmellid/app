@@ -12,9 +12,15 @@ with col3:
 st.markdown("<h3 style='text-align: center;'>Sistema de monitorización de eventos en tramos</h3>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center;'>Camino de Santiago - Camino Portugués</h3>", unsafe_allow_html=True)
 
+
+st.divider()
+
 st.write("""
-Este proyecto se encuadra dentro de la asignatura Proyecto Integrador I, del Grado de Inteligencia Artificial 
+El proyecto de desarrollo de esta apliación se encuadra dentro de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
 de la Universidade de Santiago de Compostela.
 """)
-st.write("Se ha desarrollado esta aplicación web que agrupa todas las funcionalidades requeridas por el caso de uso planteado por la entidad colaboradora AMTEGA.")
+
+st.write("""Esta aplicación cuenta con 4 funcionalidades para el usuario, un sistema de predicción meteorológica, una herramienta de consultas
+geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupación
+""")
 
