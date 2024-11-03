@@ -1,10 +1,8 @@
 import streamlit as st
 
-st.write("Versión de Streamlit:", st.__version__)
-
 st.set_page_config(
     page_title="Inicio",
-    page_icon="🧊",
+    #page_icon="🧊",
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
@@ -13,6 +11,8 @@ st.set_page_config(
         'About': "# This is a header. This is an *extremely* cool app!"
     }
 )
+
+st.write("Versión de Streamlit:", st.__version__)
 
 col1, col2, col3 = st.columns([3,3,3])
 with col1:
