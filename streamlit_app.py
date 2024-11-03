@@ -15,12 +15,15 @@ st.markdown("<h3 style='text-align: center;'>Camino de Santiago - Camino Portugu
 
 st.divider()
 
+st.write("""Esta aplicación cuenta con 4 funcionalidades para el usuario, un sistema de predicción meteorológica, una herramienta de consultas
+geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupación
+""")
+
+st.divider()
+
 st.write("""
 El proyecto de desarrollo de esta apliación se encuadra dentro de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
 de la Universidade de Santiago de Compostela.
 """)
 
-st.write("""Esta aplicación cuenta con 4 funcionalidades para el usuario, un sistema de predicción meteorológica, una herramienta de consultas
-geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupación
-""")
 
