@@ -19,6 +19,9 @@ st.write("""Esta aplicación cuenta con 4 funcionalidades para el usuario, un si
 geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupación
 """)
 
+if st.button("Predicción"):
+    st.markdown("<a href='https://smetria.streamlit.app/prediccion' target='_blank'>Haz clic aquí para ir a la página de la app</a>", unsafe_allow_html=True)
+
 st.divider()
 
 st.write("""
