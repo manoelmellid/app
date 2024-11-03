@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from utils import obtener_coordenadas as obcoor, pronostico as prn
-
 st.set_page_config(page_title="Predicción meteorológica")
+
+from utils import obtener_coordenadas as obcoor, pronostico as prn
 
 col1, col2, col3 = st.columns([3,3,3])
 with col1:
