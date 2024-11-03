@@ -21,7 +21,7 @@ geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupació
 
 st.divider()
 
-st.write("""
+st.text("""
 El proyecto de desarrollo de esta apliación se encuadra dentro de la asignatura Proxecto Integrador I, del Grao de Intelixencia Artificial 
 de la Universidade de Santiago de Compostela.
 """)
