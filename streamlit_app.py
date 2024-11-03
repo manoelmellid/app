@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.write("Versión de Streamlit:", st.__version__)
+
 st.set_page_config(
     page_title="Inicio",
     page_icon="🧊",
