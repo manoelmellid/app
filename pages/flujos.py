@@ -1,7 +1,0 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-from utils import obtener_coordenadas as obcoor, pronostico as prn
-
-st.header("Modelo predictivo de flujos")
-# Aquí incluirías todo el código específico para la predicción
