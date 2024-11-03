@@ -31,7 +31,7 @@ st.write("""
 Manoel Mellid Losada
 \nBorja Puime Rodríguez
 \nCaarolina Rey Conesa
-\3º Intelixencia Artificial - USC
+\n3º Intelixencia Artificial - USC
 """)
 
 
