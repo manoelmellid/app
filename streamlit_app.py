@@ -20,8 +20,7 @@ geospaciales, un modelo predictivo de flujos y un modelo predictivo de ocupació
 """)
 
 if st.button("Predicción"):
-    st.markdown("<a href='https://smetria.streamlit.app/prediccion' target='_blank'>Haz clic aquí para ir a la página de la app</a>", unsafe_allow_html=True)
-
+    st.markdown("<meta http-equiv='refresh' content='0; url=https://smetria.streamlit.app/prediccion'>", unsafe_allow_html=True)
 st.divider()
 
 st.write("""
