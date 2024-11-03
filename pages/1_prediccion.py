@@ -12,8 +12,6 @@ with col1:
 with col3:
     st.header("SMETRIA")
 
-st.markdown("<h3 style='text-align: center;'>Sistema de monitorización de eventos en tramos</h3>", unsafe_allow_html=True)
-
 st.divider()
 
 st.header("Predicción meteorológica")
