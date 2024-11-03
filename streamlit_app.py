@@ -2,8 +2,7 @@ import streamlit as st
 from pages import prediccion, navegacion, flujos, ocupacion
 
 st.set_page_config(
-    page_title="Inicio",
-)
+    page_title="Inicio")
 
 col1, col2, col3 = st.columns([3,3,3])
 with col1:
