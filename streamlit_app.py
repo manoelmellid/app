@@ -32,12 +32,12 @@ nom1, nom2, nom3 = st.columns([3,3,3])
 with nom1:
     st.markdown("<p style='text-align: center;'>Manoel Mellid Losada</p>", unsafe_allow_html=True)
 with nom2:
-    st.write("Borja Puime Rodríguez")
+    st.markdown("<p style='text-align: center;'>Borja Puime Rodríguez</p>", unsafe_allow_html=True)
 with nom3:
-    st.write("Carolina Rey Conesa")
+    st.markdown("<p style='text-align: center;'>Carolina Rey Conesa</p>", unsafe_allow_html=True)
     
 seg1, seg2, seg3 = st.columns([3,3,3])
 with seg2:
-    st.write("3º Intelixencia Artificial - USC")
+    st.markdown("<p style='text-align: center;'>3º Intelixencia Artificial - USC</p>", unsafe_allow_html=True)
 
 
